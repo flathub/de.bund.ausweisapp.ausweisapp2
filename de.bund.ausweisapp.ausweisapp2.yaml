@@ -29,9 +29,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Governikus/AusweisApp2.git
-        tag: 1.20.0
-      - type: patch
-        path: AusweisApp2-1.20.0-no-mailto.patch
+        tag: 1.20.2
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
       - type: file
@@ -41,7 +39,7 @@ modules:
       - -DCMAKE_BUILD_TYPE=release
     builddir: true
     post-install:
-      - install -D /app/share/AusweisApp2_CE/AusweisApp2/npa.svg /app/share/icons/hicolor/scalable/apps/de.bund.ausweisapp.ausweisapp2.svg
+      - cd /app/share/icons/hicolor/scalable/apps/; cp AusweisApp2.svg de.bund.ausweisapp.ausweisapp2.svg
       - rm -f /app/share/applications/com.governikus.ausweisapp2.desktop
       - rm -rf /app/share/metainfo
       - install -D ../de.bund.ausweisapp.ausweisapp2.appdata.xml /app/share/appdata/de.bund.ausweisapp.ausweisapp2.appdata.xml

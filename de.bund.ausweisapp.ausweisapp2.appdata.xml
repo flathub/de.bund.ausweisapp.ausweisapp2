@@ -25,7 +25,7 @@
     <binary>AusweisApp2</binary>
   </provides>
   <releases>
-    <release version="1.20.0" date="2020-01-15" />
+    <release version="1.20.2" date="2020-09-02" />
   </releases>
   <screenshots>
     <screenshot type="default">
