@@ -37,7 +37,7 @@ modules:
         path: de.bund.ausweisapp.ausweisapp2.desktop
     buildsystem: cmake
     config-opts:
-      - -DCMAKE_BUILD_TYPE=release
+      - -DCMAKE_BUILD_TYPE=MinSizeRel
     builddir: true
     post-install:
       - cd /app/share/icons/hicolor/scalable/apps/; cp AusweisApp2.svg de.bund.ausweisapp.ausweisapp2.svg
