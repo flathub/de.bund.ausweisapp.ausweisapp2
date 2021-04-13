@@ -30,7 +30,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Governikus/AusweisApp2.git
-        tag: 1.22.0
+        tag: 1.22.2
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
       - type: file
