@@ -1,6 +1,6 @@
 app-id: de.bund.ausweisapp.ausweisapp2
 runtime: org.kde.Platform
-runtime-version: "5.15"
+runtime-version: "5.15-21.08"
 sdk: org.kde.Sdk
 command: AusweisApp2
 finish-args:
