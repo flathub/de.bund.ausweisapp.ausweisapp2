@@ -1,6 +1,5 @@
 [Desktop Entry]
 Version=1.0
-Name=AusweisApp2
 Type=Application
 Exec=AusweisApp2
 Icon=de.bund.ausweisapp.ausweisapp2
@@ -9,3 +8,5 @@ Terminal=false
 Categories=System;Security;
 GenericName=Authentication App
 Keywords=nPA,eID,eAT,Personalausweis,Aufenthaltstitel,Identity,Card
+Name=AusweisApp2
+StartupWMClass=AusweisApp2
