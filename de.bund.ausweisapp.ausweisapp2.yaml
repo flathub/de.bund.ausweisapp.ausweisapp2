@@ -17,8 +17,8 @@ modules:
   - name: pcsc-lite
     sources:
       - type: archive
-        url: https://pcsclite.apdu.fr/files/pcsc-lite-1.9.7.tar.bz2
-        sha256: 92c1ef6e94170ac06c9c48319a455ad6de5bcc60d9d055a823b72a2f4ff3e466
+        url: https://pcsclite.apdu.fr/files/pcsc-lite-1.9.9.tar.bz2
+        sha256: cbcc3b34c61f53291cecc0d831423c94d437b188eb2b97b7febc08de1c914e8a
     config-opts:
       - --with-systemdsystemunitdir=/app/lib/systemd/system
     cleanup:
@@ -29,8 +29,8 @@ modules:
   - name: AusweisApp2
     sources:
       - type: archive
-        url: https://github.com/Governikus/AusweisApp2/releases/download/1.22.6/AusweisApp2-1.22.6.tar.gz
-        sha256: 3665502eb9fa5811c58ffd1952e15589216bcaaf88c63458ac5930c9ad588945
+        url: https://github.com/Governikus/AusweisApp2/releases/download/1.24.2/AusweisApp2-1.24.2.tar.gz
+        sha256: 393c42507906fa79857685bab215bd5f24dd27a54fa1826bce609ad7991e4071
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
       - type: file
