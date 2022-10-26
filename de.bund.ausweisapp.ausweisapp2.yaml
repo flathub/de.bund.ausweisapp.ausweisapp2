@@ -1,6 +1,6 @@
 app-id: de.bund.ausweisapp.ausweisapp2
 runtime: org.kde.Platform
-runtime-version: "6.3"
+runtime-version: "6.4"
 sdk: org.kde.Sdk
 command: AusweisApp2
 finish-args:
@@ -29,8 +29,8 @@ modules:
   - name: AusweisApp2
     sources:
       - type: archive
-        url: https://github.com/Governikus/AusweisApp2/releases/download/1.24.2/AusweisApp2-1.24.2.tar.gz
-        sha256: 393c42507906fa79857685bab215bd5f24dd27a54fa1826bce609ad7991e4071
+        url: https://github.com/Governikus/AusweisApp2/releases/download/1.24.3/AusweisApp2-1.24.3.tar.gz
+        sha256: 9d3708ebd990b62731ebeeced7c6d2610e4c6784bab708662c3c1bc926c97d67
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
       - type: file
