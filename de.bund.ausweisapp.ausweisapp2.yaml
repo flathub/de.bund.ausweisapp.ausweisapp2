@@ -8,6 +8,7 @@ finish-args:
   - --share=network
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --socket=pcsc
   - --own-name=org.kde.* # Workaround for org.kde.StatusNotifierWatcher support, see https://github.com/flathub/com.viber.Viber/issues/4
   - --talk-name=org.freedesktop.Notifications
