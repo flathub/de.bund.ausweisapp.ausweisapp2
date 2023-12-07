@@ -15,7 +15,6 @@ finish-args:
   - --socket=pcsc
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
-  - --filesystem=home
 modules:
   - name: pcsc-lite
     sources:
