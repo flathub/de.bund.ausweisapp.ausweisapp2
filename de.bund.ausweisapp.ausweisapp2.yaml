@@ -21,6 +21,10 @@ modules:
       - type: archive
         url: https://pcsclite.apdu.fr/files/pcsc-lite-2.0.0.tar.bz2
         sha256: d6c3e2b64510e5ed6fcd3323febf2cc2a8e5fda5a6588c7671f2d77f9f189356
+        x-checker-data:
+          type: anitya
+          project-id: 2611
+          url-template: "https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.bz2"
     config-opts:
       - --with-systemdsystemunitdir=/app/lib/systemd/system
     cleanup:
@@ -33,6 +37,15 @@ modules:
       - type: archive
         url: https://github.com/Governikus/AusweisApp2/releases/download/2.0.0/AusweisApp-2.0.0.tar.gz
         sha256: f1eff8e9028539f6374045b31b1cef05f30814900c24acaf0451e9982a6be274
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/Governikus/AusweisApp2/releases/latest
+          tag-query: .tag_name
+          version-query: $tag
+          url-query: .assets[] | select(.name=="AusweisApp-" + $version
+            + ".tar.gz") | .browser_download_url
+          is-main-source: true
+          timestamp-query: .published_at
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
     buildsystem: cmake-ninja
