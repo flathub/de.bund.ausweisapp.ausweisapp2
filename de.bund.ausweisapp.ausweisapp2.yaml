@@ -1,6 +1,6 @@
 app-id: de.bund.ausweisapp.ausweisapp2
 runtime: org.kde.Platform
-runtime-version: "6.5"
+runtime-version: "6.6"
 sdk: org.kde.Sdk
 command: AusweisApp
 rename-desktop-file: com.governikus.ausweisapp2.desktop
