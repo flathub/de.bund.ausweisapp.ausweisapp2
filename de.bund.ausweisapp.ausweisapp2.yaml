@@ -1,6 +1,6 @@
 app-id: de.bund.ausweisapp.ausweisapp2
 runtime: org.kde.Platform
-runtime-version: "6.6"
+runtime-version: '6.6'
 sdk: org.kde.Sdk
 command: AusweisApp
 rename-desktop-file: com.governikus.ausweisapp2.desktop
@@ -24,7 +24,7 @@ modules:
         x-checker-data:
           type: anitya
           project-id: 2611
-          url-template: "https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.bz2"
+          url-template: https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.bz2
     config-opts:
       - --with-systemdsystemunitdir=/app/lib/systemd/system
     cleanup:
@@ -35,15 +35,15 @@ modules:
   - name: AusweisApp2
     sources:
       - type: archive
-        url: https://github.com/Governikus/AusweisApp2/releases/download/2.0.0/AusweisApp-2.0.0.tar.gz
-        sha256: f1eff8e9028539f6374045b31b1cef05f30814900c24acaf0451e9982a6be274
+        url: https://github.com/Governikus/AusweisApp2/releases/download/2.0.1/AusweisApp-2.0.1.tar.gz
+        sha256: cfb23fdb54e02af8a266388d11989d3f1606dfab48dd80a2f78ff58cb34cbb57
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Governikus/AusweisApp2/releases/latest
           tag-query: .tag_name
           version-query: $tag
-          url-query: .assets[] | select(.name=="AusweisApp-" + $version
-            + ".tar.gz") | .browser_download_url
+          url-query: .assets[] | select(.name=="AusweisApp-" + $version + ".tar.gz")
+            | .browser_download_url
           is-main-source: true
           timestamp-query: .published_at
       - type: file
