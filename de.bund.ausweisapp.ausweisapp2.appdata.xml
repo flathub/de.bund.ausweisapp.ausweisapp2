@@ -50,7 +50,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/e-user/flatpak-ausweisapp2/master/ausweisapp-main.png</image>
+      <image type="source" width="960" height="748">https://raw.githubusercontent.com/flathub/de.bund.ausweisapp.ausweisapp2/master/screenshot.png</image>
       <caption>Main Window</caption>
     </screenshot>
   </screenshots>
