@@ -25,6 +25,7 @@
     <binary>AusweisApp</binary>
   </provides>
   <releases>
+    <release version="2.0.3" date="2024-01-19"/>
     <release version="2.0.2" date="2024-01-12"/>
     <release version="2.0.1" date="2023-11-08"/>
     <release version="2.0.0" date="2023-11-06"/>
