@@ -33,14 +33,14 @@ modules:
       - /lib/*.la
       - /lib/pkgconfig
 
-  - name: AusweisApp2
+  - name: AusweisApp
     sources:
       - type: archive
         url: https://github.com/Governikus/AusweisApp/releases/download/2.0.3/AusweisApp-2.0.3.tar.gz
         sha256: ea665944fae12aa1c7de3fa344236953b7149b38d0f206e145ec84beba07101a
         x-checker-data:
           type: json
-          url: https://api.github.com/repos/Governikus/AusweisApp2/releases/latest
+          url: https://api.github.com/repos/Governikus/AusweisApp/releases/latest
           tag-query: .tag_name
           version-query: $tag
           url-query: .assets[] | select(.name=="AusweisApp-" + $version + ".tar.gz")
