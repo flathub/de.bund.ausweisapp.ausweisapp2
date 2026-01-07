@@ -19,8 +19,8 @@ modules:
   - name: pcsc-lite
     sources:
       - type: archive
-        url: https://pcsclite.apdu.fr/files/pcsc-lite-2.4.0.tar.xz
-        sha256: 22307017a99e123dbecb991136783beca07966f1376d74d9ad0004ba5f81c4f1
+        url: https://pcsclite.apdu.fr/files/pcsc-lite-2.4.1.tar.xz
+        sha256: afd3ba68c8000d2be048dc292df99a9812df9ad2efaf0a366eea22ac1faa19a7
         x-checker-data:
           type: anitya
           project-id: 2611
