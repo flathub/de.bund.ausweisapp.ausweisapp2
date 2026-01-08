@@ -20,6 +20,8 @@
     <category>Utility</category>
   </categories>
   <url type="homepage">https://www.ausweisapp.bund.de/</url>
+  <url type="faq">https://www.ausweisapp.bund.de/faq-fuer-nutzende</url>
+  <url type="vcs-browser">https://github.com/Governikus/AusweisApp/</url>
   <launchable type="desktop-id">de.bund.ausweisapp.ausweisapp2.desktop</launchable>
   <provides>
     <binary>AusweisApp</binary>
