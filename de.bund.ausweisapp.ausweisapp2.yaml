@@ -33,11 +33,28 @@ modules:
       - /lib/*.la
       - /lib/pkgconfig
 
+  - name: llhttp
+    sources:
+      - type: archive
+        url: https://github.com/nodejs/llhttp/archive/refs/tags/release/v9.3.1.tar.gz
+        sha256: c14a93f287d3dbd6580d08af968294f8bcc61e1e1e3c34301549d00f3cf09365
+        x-checker-data:
+          type: anitya
+          project-id: 241543
+          url-template: https://github.com/nodejs/llhttp/archive/refs/tags/release/v$version.tar.gz
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DLLHTTP_BUILD_SHARED_LIBS=ON
+    cleanup:
+      - /include
+      - /lib/pkgconfig
+      - /lib/cmake
+
   - name: AusweisApp
     sources:
       - type: archive
-        url: https://github.com/Governikus/AusweisApp/releases/download/2.4.1/AusweisApp-2.4.1.tar.gz
-        sha256: e30f52a9b449560f9a6748933cf1c7a21e8c08f630394655bf3f7d09246932a4
+        url: https://github.com/Governikus/AusweisApp/releases/download/2.5.0/AusweisApp-2.5.0.tar.gz
+        sha256: 76cf328c783726db796e3fd596e3a77e84cf407702072d788008dc50025cfde6
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Governikus/AusweisApp/releases/latest
