@@ -25,9 +25,11 @@ modules:
           type: anitya
           project-id: 2611
           url-template: https://pcsclite.apdu.fr/files/pcsc-lite-$version.tar.xz
+    buildsystem: meson
     config-opts:
-      - --with-systemdsystemunitdir=/app/lib/systemd/system
-      - --disable-polkit
+      - -Dlibsystemd=false
+      - -Dsystemdunit=system
+      - -Dpolkit=false
     cleanup:
       - /include
       - /lib/*.la
