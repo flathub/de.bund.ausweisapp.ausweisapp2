@@ -38,8 +38,8 @@ modules:
   - name: llhttp
     sources:
       - type: archive
-        url: https://github.com/nodejs/llhttp/archive/refs/tags/release/v9.4.2.tar.gz
-        sha256: ba717a2f99f340a0ee9796aaf2b1acca057e1e37682ffd2bc4def4d3b6bc4005
+        url: https://github.com/nodejs/llhttp/archive/refs/tags/release/v9.4.3.tar.gz
+        sha256: 1eb813c7437b31a87496a1cd3ed79f00746720f5e7e29c79b42c02cb69f36c39
         x-checker-data:
           type: anitya
           project-id: 241543
