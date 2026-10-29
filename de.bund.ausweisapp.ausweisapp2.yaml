@@ -55,8 +55,9 @@ modules:
   - name: AusweisApp
     sources:
       - type: archive
-        url: https://github.com/Governikus/AusweisApp/releases/download/2.6.1/AusweisApp-2.6.1.tar.gz
-        sha256: 754acde7b37bd774ccbd588f155dd4bd555e2d141dcc9747c4697ef12a3cc6b0
+        url: 
+          https://github.com/Governikus/AusweisApp/releases/download/2.6.2/AusweisApp-2.6.2.tar.gz
+        sha256: 8907defc59ddfe4cc65d7ac71fb1d92ef55d0df881763b96e90d283a9a87cb34
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Governikus/AusweisApp/releases/latest
