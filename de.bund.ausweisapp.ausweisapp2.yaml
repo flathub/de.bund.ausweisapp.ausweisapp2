@@ -67,6 +67,10 @@ modules:
             | .browser_download_url
           is-main-source: true
           timestamp-query: .published_at
+
+      - type: patch
+        path: vendor.patch
+
       - type: file
         path: de.bund.ausweisapp.ausweisapp2.appdata.xml
     buildsystem: cmake-ninja
